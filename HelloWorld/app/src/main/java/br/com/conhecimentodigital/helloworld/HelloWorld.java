@@ -32,7 +32,14 @@ public class HelloWorld extends Activity {
         try {
             Thread.sleep(2000);
 
+            // Intent Explicita
             Intent intent = new Intent(this, MainActivity.class);
+
+            // Intent Implicita
+//            Intent intent = new Intent("ABRIR_MAIN_ACTIVITY");
+//            Intent intent = new Intent();
+//            intent.setAction("ABRIR_MAIN_ACTIVITY");
+
             intent.putExtra("nome", novoTexto);
 
             startActivity(intent);
