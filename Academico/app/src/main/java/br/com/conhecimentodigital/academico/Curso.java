@@ -1,11 +1,12 @@
 package br.com.conhecimentodigital.academico;
 
+import java.io.Serializable;
 import java.util.Date;
 
 /**
  * Created by fernandooliveira on 24/01/15.
  */
-public class Curso {
+public class Curso implements Serializable {
     private Long id;
     private String nome;
     private String status;
